@@ -1,6 +1,11 @@
 class StandardPingController < ApplicationController
   def show
-    # render :text => CACHE.get(params[:slug])
-    render :text => Rails.cache.read(params[:slug])
+    res = Rails.cache.read(params[:id])
+    render :text => res
+  end
+
+  def update
+    Rails.cache.write(params[:id], params[:value])
+    render :text => 'success'
   end
 end
