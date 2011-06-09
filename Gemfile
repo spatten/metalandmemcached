@@ -8,6 +8,11 @@ gem 'rails', '3.0.6'
 gem 'sqlite3'
 
 gem 'rake', '~> 0.8.7'
+
+gem 'dalli', :git => 'git://github.com/mperham/dalli.git'
+# gem 'memcache-client'
+
+gem 'mongrel'
 # Use unicorn as the web server
 # gem 'unicorn'
 
