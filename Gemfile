@@ -9,8 +9,8 @@ gem 'sqlite3'
 
 gem 'rake', '~> 0.8.7'
 
-gem 'dalli', :git => 'git://github.com/mperham/dalli.git'
-# gem 'memcache-client'
+# gem 'dalli', :git => 'git://github.com/mperham/dalli.git'
+gem 'memcache-client'
 
 gem 'mongrel'
 # Use unicorn as the web server
